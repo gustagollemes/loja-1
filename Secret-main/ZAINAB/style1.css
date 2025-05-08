@@ -1,0 +1,163 @@
+/* Global reset to remove default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base body styles with gradient background */
+body {
+    font-family: 'Poppins', sans-serif; /* Using imported Poppins font */
+    background: linear-gradient(135deg, #40e0d0, #00b7eb, #0080ff); /* Gradient background */
+    color: #333; /* Default text color */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Main container styling */
+.container {
+    display: flex;
+    width: 90%; /* Responsive width */
+    max-width: 1000px; /* Maximum width */
+    height: 600px; /* Fixed height */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow content */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #fff; /* White background */
+    transform: translateY(-10px); /* Slight upward offset */
+    transition: transform 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect for container */
+.container:hover {
+    transform: translateY(0); /* Reset position on hover */
+}
+
+/* Left side panel styling */
+.left-side {
+    width: 40%; /* Takes 40% of container */
+    background-color: #fff; /* White background */
+    padding: 40px; /* Inner spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1); /* Right shadow */
+}
+
+/* Logo image styling */
+.logo img {
+    width: 200px; /* Fixed width */
+    margin-bottom: 60px; /* Spacing below logo */
+    border-radius: 30px; /* Rounded corners */
+}
+
+/* Button container styling */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between buttons */
+    width: 100%; /* Full width */
+}
+
+/* Button base styling */
+.btn {
+    background-color: #0072ff; /* Blue background */
+    color: white; /* White text */
+    padding: 15px; /* Button padding */
+    font-size: 18px; /* Text size */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 300px; /* Fixed width */
+}
+
+/* Button hover state */
+.btn:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: translateY(-2px); /* Slight lift */
+}
+
+/* Button active/pressed state */
+.btn:active {
+    background-color: #00448a; /* Even darker blue */
+    transform: translateY(0); /* Reset position */
+}
+
+/* Right side panel styling */
+.right-side {
+    width: 60%; /* Takes 60% of container */
+    background-image: url('background-image.jpg'); /* Background image */
+    background-size: cover; /* Cover entire area */
+    background-position: center; /* Center image */
+    color: rgb(0, 0, 0); /* Black text */
+    padding: 50px; /* Inner spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align content to left */
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Text shadow */
+}
+
+/* Main heading styles */
+main h1 {
+    font-size: 42px; /* Large text */
+    font-weight: 600; /* Semi-bold */
+    margin-bottom: 20px; /* Spacing below */
+    animation: fadeIn 1.5s ease-out; /* Fade-in animation */
+}
+
+/* Paragraph text styling */
+main p {
+    font-size: 18px; /* Medium text */
+    opacity: 0.85; /* Slightly transparent */
+    line-height: 1.6; /* Comfortable line spacing */
+}
+
+/* Footer styling */
+footer {
+    position: fixed; /* Fixed at bottom */
+    bottom: 0;
+    width: 100%; /* Full width */
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    text-align: center;
+    padding: 10px; /* Inner spacing */
+    font-size: 14px; /* Small text */
+}
+
+/* Fade-in animation definition */
+@keyframes fadeIn {
+    0% { opacity: 0; } /* Start invisible */
+    100% { opacity: 1; } /* End fully visible */
+}
+
+/* Responsive styles for tablets and smaller devices */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack vertically */
+        height: auto; /* Auto height */
+    }
+
+    .left-side, .right-side {
+        width: 100%; /* Full width */
+        height: auto; /* Auto height */
+    }
+
+    .buttons {
+        width: 80%; /* 80% width */
+    }
+
+    /* Adjusted text sizes for mobile */
+    main h1 {
+        font-size: 30px;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+}
