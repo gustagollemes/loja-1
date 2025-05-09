@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Configurações básicas do documento -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
+    <title>Cadastro - LUMINA</title> <!-- Título da página na aba do navegador -->
+    
+    <!-- Ícone da página (favicon) -->
+    <link rel="shortcut icon" href="Imagens/Logo.jpeg">
+    
+    <!-- Importando a fonte Poppins do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Vinculando o arquivo CSS -->
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- Container principal do formulário -->
+    <div class="container-login">
+        <!-- Logo da empresa -->
+        <div class="logo">
+            <img src="Imagens/Logo.jpeg" alt="Logo">
+        </div>
+        
+        <!-- Título da página -->
+        <h2>Crie sua conta</h2>
+        
+        <!-- Formulário de cadastro -->
+        <form class="formulario">
+            <!-- Campo de nome completo -->
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+            
+            <!-- Campo de email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Digite seu email" required>
+            
+            <!-- Campo de senha -->
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" placeholder="Crie uma senha" required>
+            
+            <!-- Campo de confirmação de senha -->
+            <label for="confirmar-senha">Confirme sua senha:</label>
+            <input type="password" id="confirmar-senha" placeholder="Digite a senha novamente" required>
+            
+            <!-- Botão de submit -->
+            <button type="submit" class="botao">Cadastrar</button>
+        </form>
+        
+        <!-- Link para login -->
+        <p class="texto-pequeno">Já tem uma conta? <a href="login.html">Faça login</a></p>
+    </div>
+</body>
+</html>

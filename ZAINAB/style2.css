@@ -1,0 +1,106 @@
+/* Estilos gerais para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página*/
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #00b7eb;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container para login e cadastro */
+.container-login {
+    background: white;
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Estilo do logo */
+.logo img {
+    width: 150px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+/* Títulos */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Formulários */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+/* Labels dos inputs */
+label {
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Campos de input */
+input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 100%;
+}
+
+/* Estilo dos botões */
+.botao {
+    background: #0072ff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Efeito ao passar o mouse no botão */
+.botao:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Texto pequeno (links) */
+.texto-pequeno {
+    font-size: 14px;
+    margin-top: 10px;
+}
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .container-login {
+        margin: 30px auto;
+        padding: 20px;
+    }
+    
+    .logo img {
+        width: 120px;
+        margin-bottom: 20px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+}
